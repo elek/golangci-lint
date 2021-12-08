@@ -73,7 +73,6 @@ func (e *Executor) persistentPostRun(_ *cobra.Command, _ []string) {
 		trace.Stop()
 	}
 
-	os.Exit(e.exitCode)
 }
 
 func printMemStats(ms *runtime.MemStats, logger logutils.Log) {

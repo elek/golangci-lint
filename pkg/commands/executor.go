@@ -248,3 +248,7 @@ func (e *Executor) releaseFileLock() {
 		e.debugf("Failed to remove lock file: %s", err)
 	}
 }
+
+func (e *Executor) ExitCode() int {
+	return e.exitCode
+}

@@ -2,6 +2,9 @@ package lintersdb
 
 import (
 	"fmt"
+	"github.com/golangci/golangci-lint/pkg/golinters/deferloop"
+	"github.com/golangci/golangci-lint/pkg/golinters/errs"
+	"github.com/golangci/golangci-lint/pkg/golinters/monkit"
 	"path/filepath"
 	"plugin"
 
@@ -506,6 +509,12 @@ func (m Manager) GetAllSupportedLinterConfigs() []*linter.Config {
 			WithLoadForGoAnalysis().
 			WithURL("https://github.com/Antonboom/errname").
 			WithSince("v1.42.0"),
+		linter.NewConfig(monkit.NewMonkitCheck()).
+			WithLoadForGoAnalysis(),
+		linter.NewConfig(deferloop.NewDeferLoopCheck()).
+			WithLoadForGoAnalysis(),
+		linter.NewConfig(errs.NewErrsCheck()).
+			WithLoadForGoAnalysis(),
 
 		// nolintlint must be last because it looks at the results of all the previous linters for unused nolint directives
 		linter.NewConfig(golinters.NewNoLintLint()).
