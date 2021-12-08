@@ -4,7 +4,7 @@
 package errs
 
 import (
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis"
 	"go/ast"
 	"go/token"
 

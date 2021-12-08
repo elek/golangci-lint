@@ -9,17 +9,17 @@ import (
 	"github.com/pkg/errors"
 	gopackages "golang.org/x/tools/go/packages"
 
-	"github.com/golangci/golangci-lint/internal/errorutil"
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/goutil"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/packages"
-	"github.com/golangci/golangci-lint/pkg/result"
-	"github.com/golangci/golangci-lint/pkg/result/processors"
-	"github.com/golangci/golangci-lint/pkg/timeutils"
+	"github.com/elek/golangci-lint/internal/errorutil"
+	"github.com/elek/golangci-lint/pkg/config"
+	"github.com/elek/golangci-lint/pkg/fsutils"
+	"github.com/elek/golangci-lint/pkg/goutil"
+	"github.com/elek/golangci-lint/pkg/lint/linter"
+	"github.com/elek/golangci-lint/pkg/lint/lintersdb"
+	"github.com/elek/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/packages"
+	"github.com/elek/golangci-lint/pkg/result"
+	"github.com/elek/golangci-lint/pkg/result/processors"
+	"github.com/elek/golangci-lint/pkg/timeutils"
 )
 
 type Runner struct {

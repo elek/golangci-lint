@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/golangci/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/logutils"
 )
 
 func TestUtils(t *testing.T) {

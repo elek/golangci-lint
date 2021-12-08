@@ -9,9 +9,9 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/loader" //nolint:staticcheck // require changes in github.com/OpenPeeDeeP/depguard
 
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/elek/golangci-lint/pkg/lint/linter"
+	"github.com/elek/golangci-lint/pkg/result"
 )
 
 func setDepguardListType(dg *depguard.Depguard, lintCtx *linter.Context) error {

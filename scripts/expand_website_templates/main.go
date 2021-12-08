@@ -18,9 +18,9 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/golangci/golangci-lint/internal/renameio"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
+	"github.com/elek/golangci-lint/internal/renameio"
+	"github.com/elek/golangci-lint/pkg/lint/linter"
+	"github.com/elek/golangci-lint/pkg/lint/lintersdb"
 )
 
 var stateFilePath = filepath.Join("docs", "template_data.state")

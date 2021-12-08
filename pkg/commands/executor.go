@@ -18,17 +18,17 @@ import (
 	"github.com/spf13/pflag"
 	"gopkg.in/yaml.v3"
 
-	"github.com/golangci/golangci-lint/internal/cache"
-	"github.com/golangci/golangci-lint/internal/pkgcache"
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis/load"
-	"github.com/golangci/golangci-lint/pkg/goutil"
-	"github.com/golangci/golangci-lint/pkg/lint"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/report"
-	"github.com/golangci/golangci-lint/pkg/timeutils"
+	"github.com/elek/golangci-lint/internal/cache"
+	"github.com/elek/golangci-lint/internal/pkgcache"
+	"github.com/elek/golangci-lint/pkg/config"
+	"github.com/elek/golangci-lint/pkg/fsutils"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis/load"
+	"github.com/elek/golangci-lint/pkg/goutil"
+	"github.com/elek/golangci-lint/pkg/lint"
+	"github.com/elek/golangci-lint/pkg/lint/lintersdb"
+	"github.com/elek/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/report"
+	"github.com/elek/golangci-lint/pkg/timeutils"
 )
 
 //go:embed default.yaml

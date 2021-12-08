@@ -15,15 +15,15 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/exitcodes"
-	"github.com/golangci/golangci-lint/pkg/lint"
-	"github.com/golangci/golangci-lint/pkg/lint/lintersdb"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/packages"
-	"github.com/golangci/golangci-lint/pkg/printers"
-	"github.com/golangci/golangci-lint/pkg/result"
-	"github.com/golangci/golangci-lint/pkg/result/processors"
+	"github.com/elek/golangci-lint/pkg/config"
+	"github.com/elek/golangci-lint/pkg/exitcodes"
+	"github.com/elek/golangci-lint/pkg/lint"
+	"github.com/elek/golangci-lint/pkg/lint/lintersdb"
+	"github.com/elek/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/packages"
+	"github.com/elek/golangci-lint/pkg/printers"
+	"github.com/elek/golangci-lint/pkg/result"
+	"github.com/elek/golangci-lint/pkg/result/processors"
 )
 
 func getDefaultIssueExcludeHelp() string {

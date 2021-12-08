@@ -5,7 +5,7 @@ package gci
 import (
 	"fmt"
 
-	"github.com/golangci/golangci-lint/pkg/config"
+	"github.com/elek/golangci-lint/pkg/config"
 
 	"github.com/pkg/errors"
 )

@@ -1,9 +1,9 @@
 package processors
 
 import (
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/elek/golangci-lint/pkg/fsutils"
+	"github.com/elek/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/result"
 )
 
 type SourceCode struct {

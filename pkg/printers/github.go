@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/elek/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/result"
 )
 
 type github struct {

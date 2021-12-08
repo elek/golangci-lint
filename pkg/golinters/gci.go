@@ -11,8 +11,8 @@ import (
 	"github.com/shazow/go-diff/difflib"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/elek/golangci-lint/pkg/lint/linter"
 )
 
 const gciName = "gci"

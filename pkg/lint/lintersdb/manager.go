@@ -2,21 +2,21 @@ package lintersdb
 
 import (
 	"fmt"
-	"github.com/golangci/golangci-lint/pkg/golinters/deferloop"
-	"github.com/golangci/golangci-lint/pkg/golinters/errs"
-	"github.com/golangci/golangci-lint/pkg/golinters/monkit"
+	"github.com/elek/golangci-lint/pkg/golinters/deferloop"
+	"github.com/elek/golangci-lint/pkg/golinters/errs"
+	"github.com/elek/golangci-lint/pkg/golinters/monkit"
 	"path/filepath"
 	"plugin"
 
 	"github.com/spf13/viper"
 	"golang.org/x/tools/go/analysis"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/golinters"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/logutils"
-	"github.com/golangci/golangci-lint/pkg/report"
+	"github.com/elek/golangci-lint/pkg/config"
+	"github.com/elek/golangci-lint/pkg/golinters"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/elek/golangci-lint/pkg/lint/linter"
+	"github.com/elek/golangci-lint/pkg/logutils"
+	"github.com/elek/golangci-lint/pkg/report"
 )
 
 type Manager struct {

@@ -15,11 +15,11 @@ import (
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/packages"
 
-	"github.com/golangci/golangci-lint/pkg/config"
-	"github.com/golangci/golangci-lint/pkg/fsutils"
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
-	"github.com/golangci/golangci-lint/pkg/lint/linter"
-	"github.com/golangci/golangci-lint/pkg/result"
+	"github.com/elek/golangci-lint/pkg/config"
+	"github.com/elek/golangci-lint/pkg/fsutils"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/elek/golangci-lint/pkg/lint/linter"
+	"github.com/elek/golangci-lint/pkg/result"
 )
 
 func NewErrcheck() *goanalysis.Linter {

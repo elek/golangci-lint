@@ -5,7 +5,7 @@
 package deferloop
 
 import (
-	"github.com/golangci/golangci-lint/pkg/golinters/goanalysis"
+	"github.com/elek/golangci-lint/pkg/golinters/goanalysis"
 	"go/ast"
 
 	"golang.org/x/tools/go/analysis"
