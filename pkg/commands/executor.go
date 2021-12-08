@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"crypto/sha256"
+	_ "embed"
 	"io"
 	"os"
 	"path/filepath"
@@ -29,6 +30,9 @@ import (
 	"github.com/golangci/golangci-lint/pkg/report"
 	"github.com/golangci/golangci-lint/pkg/timeutils"
 )
+
+//go:embed default.yaml
+var StorjDefaults []byte
 
 type Executor struct {
 	rootCmd    *cobra.Command
@@ -104,6 +108,10 @@ func NewExecutor(version, commit, date string) *Executor {
 	// like the default ones. It will overwrite them only if the same option
 	// is found in command-line: it's ok, command-line has higher priority.
 
+	err = yaml.Unmarshal(StorjDefaults, e.cfg)
+	if err != nil {
+		e.log.Fatalf("Embedded defaults couldn't be read: %s", err)
+	}
 	r := config.NewFileReader(e.cfg, commandLineCfg, e.log.Child("config_reader"))
 	if err = r.Read(); err != nil {
 		e.log.Fatalf("Can't read config: %s", err)
