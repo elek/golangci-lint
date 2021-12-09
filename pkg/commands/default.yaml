@@ -19,7 +19,6 @@ linters:
     - exportloopref           # check for exported loop vars
     - gocritic                # checks for style, performance issues, and common programming errors
     - godot                   # dots for everything
-    - goerr113                # check error expressions
     - gofmt                   # sanity check formatting
     - goprintffuncname        # checks that printf-like functions are named with `f` at the end [fast: true, auto-fix: false]
     - govet                   # check standard vet rules
@@ -86,6 +85,7 @@ linters:
     - unused           # part of staticcheck
     - wrapcheck        # too much noise and false positives
     - wsl              # too much noise
+    - goerr113         # only static err is enabled 
   fast: false
 
 output:
