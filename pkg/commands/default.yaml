@@ -122,7 +122,7 @@ linters-settings:
   golint:
     min-confidence: 0.8
   gofmt:
-    simplify: true
+    simplify: false
   gocyclo:
     min-complexity: 10
   dupl:
